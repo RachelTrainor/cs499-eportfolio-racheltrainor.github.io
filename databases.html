@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,17 +36,155 @@
             <h1>Databases</h1>
 
             <p>
-                This section presents my database enhancement of the
-                Weigh To Go Android application.
+                This section presents my database enhancement
+                of the Weigh To Go Android application.
+                I focused on improving how the application
+                stores, organizes, and retrieves user data
+                while making better use of SQLite.
             </p>
 
             <a class="button"
-               href="artifacts/WeighToGo_Original.zip">
-                Download Original Artifact
+               href="artifacts/WeighToGo_Original.zip"
+               download>
+                Download Unenhanced Artifact
             </a>
 
-            <p style="color: #66775d;">
-                <em>Enhanced database artifact will be added here.</em>
+            <a class="button"
+               href="artifacts/CS499_Milestone%204_Rachel%20Trainor.zip"
+               download>
+                Download Module Four Enhancement
+            </a>
+
+        </div>
+
+
+        <!-- Enhancement Overview -->
+
+        <div class="card">
+
+            <h2>Database Enhancement Overview</h2>
+
+            <p>
+                For this enhancement, I wanted to improve
+                how Weigh To Go manages information for
+                individual users. Although the original
+                application already had a login system
+                and used SQLite, weight records and
+                goals were not properly connected
+                to individual accounts.
+            </p>
+
+            <p>
+                I updated the database structure and
+                operations to connect stored information
+                to the correct user. I also added SQL
+                queries that calculate statistics from
+                saved weight records, making the
+                database more useful to the application.
+            </p>
+
+        </div>
+
+
+        <!-- Enhancements Made -->
+
+        <div class="card">
+
+            <h2>Enhancements Made</h2>
+
+            <h3>User-Specific Data Management</h3>
+
+            <p>
+                I updated the database so weight entries
+                and goals are associated with individual
+                user accounts. This prevents information
+                from different users from being mixed
+                together.
+            </p>
+
+            <h3>Relational Database Structure</h3>
+
+            <p>
+                I connected the users, weights, and goals
+                tables through user IDs and foreign keys.
+                I also added an index to improve
+                user-specific database lookups.
+            </p>
+
+            <h3>Improved CRUD Operations</h3>
+
+            <p>
+                I updated the database operations to
+                include the logged-in user's ID when
+                retrieving, updating, and deleting
+                records. This ensures that the application
+                only accesses information belonging
+                to the correct account.
+            </p>
+
+            <h3>SQL Aggregation</h3>
+
+            <p>
+                I added SQL queries using COUNT(),
+                MIN(), MAX(), and AVG() to calculate
+                useful information from saved weight
+                records. These results are displayed
+                on the Weight Progress screen.
+            </p>
+
+            <p>
+                The statistics include total weight
+                entries, lowest recorded weight,
+                highest recorded weight, and
+                average recorded weight.
+            </p>
+
+        </div>
+
+
+        <!-- Course Outcomes -->
+
+        <div class="card">
+
+            <h2>Course Outcomes Demonstrated</h2>
+
+            <h3>Outcome Four</h3>
+
+            <p>
+                Demonstrate an ability to use well-founded
+                and innovative techniques, skills, and tools
+                in computing practices for the purpose of
+                implementing computer solutions that deliver
+                value and accomplish industry-specific goals.
+            </p>
+
+            <p>
+                I demonstrated this outcome by improving
+                the SQLite database structure, creating
+                relationships between tables, updating
+                CRUD operations, and adding SQL queries
+                that turn stored data into useful
+                information.
+            </p>
+
+            <h3>Outcome Five</h3>
+
+            <p>
+                Develop a security mindset that anticipates
+                adversarial exploits in software architecture
+                and designs to expose potential vulnerabilities,
+                mitigate design flaws, and ensure privacy
+                and enhanced security of data and resources.
+            </p>
+
+            <p>
+                I demonstrated this outcome by improving
+                how the application separates information
+                between users. Requiring the correct
+                user ID when retrieving, editing, or
+                deleting records helps protect user
+                information from being accessed or
+                modified through another account.
             </p>
 
         </div>
@@ -55,10 +194,109 @@
 
         <div class="card">
 
-            <h2 style="text-align: center;">Enhancement Narrative</h2>
+            <h2 style="text-align: center;">
+                Enhancement Narrative
+            </h2>
 
-            <p style="text-align: center; color: #66775d;">
-                <em>Database enhancement narrative will be added here.</em>
+            <p>
+                The artifact I chose for the database enhancement
+                is my Weigh to Go Android Application, which I
+                created in CS 360: Mobile Architecture and
+                Programming. I designed the app to give users
+                a simple way to track their weight and work
+                toward a goal. Users can create an account,
+                log in, add weight entries, set a goal weight,
+                edit or delete entries, and view their progress.
+                I have continued building on the original
+                application throughout CS499, and for this
+                enhancement I focused on improving the database
+                and how the app handles each user's information.
+            </p>
+
+            <p>
+                I chose this artifact because it shows how much
+                I have been able to improve something that
+                started as a basic daily Android application.
+                The database especially had room for improvement.
+                Even though the original app allowed people
+                to create different accounts, the weight entries
+                and goal weight were not actually connected
+                to those accounts. This meant the login system
+                and the stored data did not really work together
+                the way they should have.
+            </p>
+
+            <p>
+                My biggest improvement was changing the database
+                so each of the user's weight entries and goals
+                belong specifically to their account. I connected
+                the users, weights, and goals tables using their
+                IDs and foreign keys. I also changed the database
+                operations so the app only loads, edits, or
+                deletes information belonging to the person
+                who is currently logged in. I added an index
+                to help with user-specific lookups as well.
+            </p>
+
+            <p>
+                I also wanted the database to do more than
+                just save information, so I added SQL queries
+                using COUNT(), MIN(), MAX(), and AVG(). I used
+                those results to add a weight statistics section
+                to the progress screen that shows the user's
+                total entries, lowest recorded weight, highest
+                recorded weight, and average weight. These
+                changes show my ability to work with SQLite,
+                relational database design, SQL queries,
+                CRUD operations, and connecting stored data
+                back to the rest of an application.
+            </p>
+
+            <p>
+                I feel that I met the outcomes I originally
+                planned for this enhancement, especially
+                outcomes four and five. Outcome four focuses
+                on using appropriate techniques, skills, and
+                tools to build computer solutions that provide
+                value. I demonstrated this by restructuring
+                the SQLite database, creating relationships
+                between tables, improving the CRUD operations,
+                and adding SQL queries that turn the stored
+                weight records into useful information
+                for the user.
+            </p>
+
+            <p>
+                I also strengthened my work toward outcome
+                five, which focuses on developing a security
+                mindset and protecting data and resources.
+                One of the problems with the original version
+                was that weight and goal information was not
+                separated between accounts. The enhanced
+                version uses the logged-in user's ID when
+                retrieving or changing data. Editing and
+                deleting a weight entry also requires the
+                correct user ID along with the record ID.
+                This gives each user's information better
+                separation and privacy. I do not think I
+                need to make any major changes to my original
+                outcome plan because the enhancement covered
+                what I intended and ended up having an even
+                stronger connection to protecting user data.
+            </p>
+
+            <p>
+                Working on this enhancement made me realize
+                that having a login system does not
+                automatically mean an application is handling
+                user data correctly. In the original app,
+                I had a users table, but the rest of the
+                database was not really connected to it.
+                I learned more about how relationships
+                between tables work and why the user ID
+                needs to follow through the rest of the
+                application when data is being saved
+                and retrieved.
             </p>
 
         </div>
@@ -79,3 +317,4 @@
 </body>
 
 </html>
+
