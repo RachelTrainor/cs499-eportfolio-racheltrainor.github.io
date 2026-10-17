@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,10 +18,10 @@
         <p>Computer Science ePortfolio</p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="app-overview.html">App Overview</a>
-        <a href="code-review.html">Code Review</a>
+        <a href="code-review.html" aria-current="page">Code Review</a>
         <a href="software-design.html">Software Design</a>
         <a href="algorithms.html">Algorithms</a>
         <a href="databases.html">Databases</a>
@@ -28,58 +29,87 @@
 
     <main>
 
-        <div class="card" style="text-align: center;">
+        <!-- INTRODUCTION -->
+
+        <section class="card" style="text-align: center;">
 
             <h1>Code Review</h1>
 
             <p>
-                This code review examines the original version of my Weigh To Go
-                Android application before completing my capstone enhancements.
-                In the review, I walk through the existing functionality, identify
-                areas that could be improved, and explain my plans for enhancing
-                the application throughout the capstone.
+                Before making any changes to Weigh To Go, I wanted
+                to take a closer look at the application I originally
+                created and see what could be improved. This code
+                review gave me the opportunity to look back at my
+                earlier work, recognize areas that needed attention,
+                and plan how I could use what I have learned
+                throughout my degree to make the application better.
             </p>
 
-        </div>
+        </section>
 
-        <div class="card" style="text-align: center;">
+
+        <!-- VIDEO -->
+
+        <section class="card" style="text-align: center;">
 
             <h2>Code Review Video</h2>
 
+            <p>
+                In this video, I walk through the original version
+                of Weigh To Go, explain how the application works,
+                and discuss the improvements I planned for my
+                CS 499 capstone.
+            </p>
+
             <div style="
-                max-width: 800px;
-                height: 450px;
+                position: relative;
+                width: 100%;
+                max-width: 850px;
+                aspect-ratio: 16 / 9;
                 margin: 25px auto;
-                background-color: #f0f0eb;
-                border: 2px dashed #a8b89a;
+                overflow: hidden;
                 border-radius: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #66775d;
+                background-color: #111;
             ">
 
-                Code Review Video Will Be Added Here
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/kY4izP7ihfk"
+                    title="CS 499 Weigh To Go Code Review"
+                    style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    "
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
 
             </div>
 
-        </div>
+            <p>
+                <a href="https://youtu.be/kY4izP7ihfk"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Watch the Code Review on YouTube
+                </a>
+            </p>
+
+        </section>
 
     </main>
 
     <footer>
-
         <p>
             <a href="index.html">Return to Home</a>
         </p>
 
         <p>Rachel Trainor | Computer Science ePortfolio</p>
-
     </footer>
 
 </body>
-
-</html>
-</body>
-
 </html>
