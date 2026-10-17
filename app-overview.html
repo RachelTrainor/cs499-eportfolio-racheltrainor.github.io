@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,15 +49,18 @@
             <h2>App Overview</h2>
 
             <p>
-                Weigh To Go is an Android weight-tracking application that I
-                originally created in CS 360: Mobile Architecture and Programming.
-                The application allows users to track their weight and monitor
-                their progress toward a goal.
+                Weigh To Go is an Android weight-tracking application
+                that I originally created in CS 360: Mobile Architecture
+                and Programming. The application allows users to record
+                their weight, set personal goals, and monitor their
+                progress over time.
             </p>
 
             <p>
-                I chose Weigh To Go as the main artifact for my CS 499 capstone
-                and enhanced it across software design and engineering, algorithms
+                I selected Weigh To Go as the main artifact for my
+                CS 499 capstone because it gave me the opportunity
+                to improve an existing project while demonstrating
+                skills in software design and engineering, algorithms
                 and data structures, and databases.
             </p>
 
@@ -69,9 +73,9 @@
 
             <div class="feature-image">
 
-                <div class="image-placeholder">
-                    Login/Register Screenshot
-                </div>
+                <img src="images/loginregister.png"
+                     alt="Weigh To Go Login and Registration Screen"
+                     class="feature-screenshot">
 
             </div>
 
@@ -80,9 +84,11 @@
                 <h2>Login and Registration</h2>
 
                 <p>
-                    The login and registration screen allows users to create an
-                    account or sign in to an existing account before accessing
-                    their weight information.
+                    Users can create an account or log in to an existing
+                    account to access their weight information.
+                    The application uses account-specific database
+                    records to keep each user's weight history
+                    and goals separate.
                 </p>
 
             </div>
@@ -96,9 +102,9 @@
 
             <div class="feature-image">
 
-                <div class="image-placeholder">
-                    Home Screen Screenshot
-                </div>
+                <img src="images/homescreen.png"
+                     alt="Weigh To Go Home Screen"
+                     class="feature-screenshot">
 
             </div>
 
@@ -107,9 +113,11 @@
                 <h2>Home Screen</h2>
 
                 <p>
-                    The home screen gives users a quick view of their current
-                    weight and goal weight. From here, users can access the
-                    weight log and other features of the application.
+                    The home screen provides an overview of the user's
+                    current weight and goal weight. It also serves
+                    as the main navigation area, allowing users
+                    to access their weight log and progress
+                    information.
                 </p>
 
             </div>
@@ -123,9 +131,9 @@
 
             <div class="feature-image">
 
-                <div class="image-placeholder">
-                    Weight Log Screenshot
-                </div>
+                <img src="images/weightlog.png"
+                     alt="Weigh To Go Weight Log Screen"
+                     class="feature-screenshot">
 
             </div>
 
@@ -134,9 +142,17 @@
                 <h2>Weight Log</h2>
 
                 <p>
-                    The weight log allows users to add and manage their weight
-                    records. Users can view previous entries, edit existing
-                    records, delete records, and organize their weight history.
+                    The weight log allows users to add, edit, and
+                    delete weight records. Users can also organize
+                    their history by date or weight using different
+                    sorting options.
+                </p>
+
+                <p>
+                    During my capstone enhancements, I improved
+                    input validation, added safer deletion,
+                    and implemented sorting using Java
+                    collections and comparators.
                 </p>
 
             </div>
@@ -150,9 +166,9 @@
 
             <div class="feature-image">
 
-                <div class="image-placeholder">
-                    Weight Progress Screenshot
-                </div>
+                <img src="images/weightprogress.png"
+                     alt="Weigh To Go Weight Progress Screen"
+                     class="feature-screenshot">
 
             </div>
 
@@ -161,11 +177,18 @@
                 <h2>Weight Progress</h2>
 
                 <p>
-                    The weight progress screen analyzes the user's weight records
-                    and provides additional information about their progress.
-                    It displays information such as starting weight, current
-                    weight, weight change, recent trends, and progress toward
-                    the user's goal.
+                    The progress screen analyzes saved weight
+                    records to help users understand how their
+                    weight has changed over time.
+                </p>
+
+                <p>
+                    It displays starting and current weights,
+                    total and average changes, recent trends,
+                    and progress toward a goal. Additional
+                    statistics, including the lowest, highest,
+                    and average recorded weights, are calculated
+                    using database queries.
                 </p>
 
             </div>
@@ -179,9 +202,9 @@
 
             <div class="feature-image">
 
-                <div class="image-placeholder">
-                    SMS Permissions Screenshot
-                </div>
+                <img src="images/sms.png"
+                     alt="Weigh To Go SMS Permissions Screen"
+                     class="feature-screenshot">
 
             </div>
 
@@ -190,11 +213,17 @@
                 <h2>SMS Permissions</h2>
 
                 <p>
-                    The SMS permissions screen allows the user to manage
-                    permission for goal notifications. When permission is
-                    available and a phone number has been entered, the
-                    application can send an SMS notification when the user
-                    reaches their goal weight.
+                    Weigh To Go includes an optional SMS
+                    notification feature that can notify users
+                    when they reach their goal weight.
+                </p>
+
+                <p>
+                    I improved the permission handling during
+                    my software design enhancement so the
+                    application can respond more clearly when
+                    SMS permission is unavailable or a
+                    notification cannot be sent.
                 </p>
 
             </div>
